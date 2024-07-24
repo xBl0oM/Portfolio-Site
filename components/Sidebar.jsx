@@ -6,8 +6,16 @@ function Sidebar() {
 
   return (
     <div className="h-screen w-56 bg-blue-900 p-4 flex flex-col items-center"> 
-      <p className="text-3xl text-white mb-6">Jan Frey</p>
-      <ul className="space-y-6 w-full relative"> 
+      <p className="text-3xl text-white mb-16 mt-4 " >Jan Frey</p>
+      <ul className="space-y-6 w-full relative">
+      <li className="text-white text-center text-base"> 
+          <a href="Home" className=" hover:bg-indigo-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 16 16" className="w-5 h-5 mr-2 inline-block">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            Home
+          </a>  
+        </li>  
         <li className="text-white text-center text-base"> 
          <a href="Lebenslauf" className=" hover:bg-indigo-900">
           <svg className="w-5 h-5 mr-2 inline-block fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true">
@@ -16,6 +24,7 @@ function Sidebar() {
             Lebenslauf
          </a>  
         </li>
+       
         <li className="relative w-full text-center text-base group"
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
