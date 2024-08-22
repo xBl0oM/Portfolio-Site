@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import '../index.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 function Sidebar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isSidebarExpanded, setIsSidebarExpanded] = useState(true); // State to manage sidebar expansion
+  const [isSidebarExpanded, setIsSidebarExpanded] = useState(true); 
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -13,7 +12,7 @@ function Sidebar() {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   };
 
-  // Handler to toggle sidebar expansion
+ 
   const toggleSidebar = () => {
     setIsSidebarExpanded(!isSidebarExpanded);
   };
@@ -78,7 +77,7 @@ function Sidebar() {
           )}
         </li>
         <li className={`text-white text-center text-base transition-transform duration-500 transform ${isDropdownOpen ? 'translate-y-40' : ''}`}>
-          <Link to="/Projekte" className="hover:bg-slate-700 p-2 rounded-md flex items-center justify-center">
+          <Link to="/Projekte#Projekte" className="hover:bg-slate-700 p-2 rounded-md flex items-center justify-center">
             <svg className="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true">
               <path fill="#FFFF"d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 288c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128z"/>
             </svg>
