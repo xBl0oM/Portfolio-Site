@@ -5,7 +5,7 @@ import escapeToDubai from '../assets/escapeToDubai.png'
 
 function Projekte() {
   return (
-    <div className="w-full min-h-screen flex justify-center items-center py-20">
+    <div id ="Projekte" className="w-full min-h-screen flex justify-center items-center py-20">
       <div className="w-[90%] lg:w-[80%] xl:w-[70%] rounded-3xl bg-slate-900 relative">
         <div className="flex justify-center">
           <h1 className="text-6xl mt-8 text-amber-100 font-playfair">Projekte</h1>
